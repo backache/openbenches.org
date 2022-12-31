@@ -52,7 +52,7 @@ if (!$present) {
 		<a href="/add" class="button buttonColour"><strong>+</strong> Add new bench</a>
 		<a href="/edit/<?php echo $benchID; ?>" class="button buttonColour"><strong>✏️</strong> Edit this bench</a>
 		<a href="/api/v1.0/data.json/?truncated=false&format=raw&media=true&bench=<?php echo $benchID; ?>" class="button buttonColour"><strong>💾</strong> Download GeoJSON</a>
-
+		<a class="button buttonColour" href="https://www.openstreetmap.org/edit#map=22/<?php echo $benchLat ?>/<?php echo $benchLong ?>" title="Edit Location on OpenStreetMap"><strong>🗺️</strong> Edit on OSM</a>
 	</div>
 	<?php
 		include("sharing.php");
